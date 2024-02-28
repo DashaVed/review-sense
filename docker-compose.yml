@@ -6,10 +6,10 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: ds
-      POSTGRES_USER: ds
-      POSTGRES_PASSWORD: ds
-      POSTGRES_NAME: ds
+      POSTGRES_DB: review-sense
+      POSTGRES_USER: review-sense
+      POSTGRES_PASSWORD: review-sense
+      POSTGRES_NAME: review-sense
     volumes:
       - db:/var/lib/postgresql/data
 
