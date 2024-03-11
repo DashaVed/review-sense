@@ -35,5 +35,7 @@ class Review(Base):
     mood: Mapped[str]
     user_id: Mapped[int] = mapped_column(ForeignKey("user.id"))
 
+    user = relationship("User", back_populates="reviews")
+
     def __repr__(self) -> str:
         return f"Review(id={self.id!r}, text={self.text!r}, mood={self.mood!r})"
